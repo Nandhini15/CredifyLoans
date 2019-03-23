@@ -1,0 +1,9 @@
+com\loans\constants\Constants.class
+com\loans\utils\ReadPropertiesUtil.class
+com\loans\pages\PortalOffersPage.class
+com\loans\pages\LoanOffersPage.class
+com\loans\tests\LoanVerificationTest.class
+com\loans\pages\PersonalInfoForLoanPage.class
+com\loans\pages\PortalLoginPage.class
+com\loans\pages\LoanLandingPage.class
+com\loans\tests\BaseTest.class
