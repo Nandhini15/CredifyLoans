@@ -1,4 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.696 s - in TestSuite
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 53.055 s <<< FAILURE! - in TestSuite
+submitLoanRequestForm(com.loans.tests.LoanVerificationTest)  Time elapsed: 33.803 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"name","selector":"borrowerFirstName"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:16:47'
+System info: host: 'mac-207-254-12-163.browserstack.com', ip: '207.254.12.163', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+Command duration or timeout: 0 milliseconds
+	at com.loans.tests.LoanVerificationTest.submitLoanRequestForm(LoanVerificationTest.java:35)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"name","selector":"borrowerFirstName"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:16:47'
+System info: host: 'mac-207-254-12-163.browserstack.com', ip: '207.254.12.163', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'DESKTOP-B6S492D', ip: '192.168.0.176', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: unknown
+

@@ -21,7 +21,6 @@ public class LoanVerificationTest extends BaseTest {
 
 	@BeforeMethod(groups = "smoke") 
 	public void beforeMethodInLoanLandingPageTest() {
-		System.out.println("Hello Before Method.");
 		landingPage = PageFactory.initElements(driver, LoanLandingPage.class);
 		System.out.println("");
 		
@@ -29,9 +28,7 @@ public class LoanVerificationTest extends BaseTest {
 
 	@Test(groups= {"smoke", "regression"})
 	public void submitLoanRequestForm() {
-		System.out.println("Hello Nandu");
 		landingPage.fillTheLoanFormAndSubmit(properties.getValue(loan_Amount), properties.getValue(purpose_Of_Loan));
-		System.out.println("Hello Nandu2");
 		personalInfoPage = PageFactory.initElements(driver, PersonalInfoForLoanPage.class);
 		
 		// Fill user details and submit
@@ -72,15 +69,15 @@ public class LoanVerificationTest extends BaseTest {
 		Assert.assertEquals(userLoanAmount, userLoanAmount2);
 	}
 	
-	@Test(groups= {"regression"})
-	void testCase2() {
-		
-	}
-	
-	@Test(groups= {"smoke"})
-	void testCase3() {
-		System.out.println("Hello TestCase 3");
-		
-	}
+//	@Test(groups= {"regression"})
+//	void testCase2() {
+//		
+//	}
+//	
+//	@Test(groups= {"smoke"})
+//	void testCase3() {
+//		System.out.println("Hello TestCase 3");
+//		
+//	}
 
 }
